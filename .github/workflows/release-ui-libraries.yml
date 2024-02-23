@@ -23,7 +23,7 @@ jobs:
       - name: Download artifact with version
         uses: actions/download-artifact@v4
         with:
-          name: "lcap-ui@@${{ fromJson(env.PACKAGE_JSON).version }}"
+          name: "lcap-ui@${{ fromJson(env.PACKAGE_JSON).version }}"
           path: temp
 
       - name: Clone from gitlab
