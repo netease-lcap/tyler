@@ -30,7 +30,7 @@ jobs:
         uses: netease-lcap/tyler@v1.0.0
 
       - name: Release to lcap-assets
-        run: node ./jimmy/app/pipelines/release-ui-libraries.js
+        run: node ./jimmy/app/pipelines/github/release-ui-libraries.js
 
       - name: Alert from Github
         if: ${{ failure() }}
